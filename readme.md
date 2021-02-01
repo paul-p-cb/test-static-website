@@ -1,19 +1,18 @@
-# angular-static-site
+![Azure Static Web Apps CI/CD](https://github.com/manekinekko/catsify/workflows/Azure%20Static%20Web%20Apps%20CI/CD/badge.svg)
 
-Minimal setup for Angular + FuseBox + Universal featuring Build Time Rendering.
+<p align="center">
+    <img src="./docs/header.png"/>
+</p>
 
-This is the demo from my "[Building High-Performance Static Web Sites with Angular](https://goo.gl/skfF5Z)" talk,
-updated for Angular 7.x.
+### What is Catsify?
 
-## Running
+Catsify is a Cat names generator, hosted on Azure Static Web Apps. The tech stack consists of:
 
-    git clone https://github.com/urish/angular-static-site
-    yarn 
-    yarn build
-    yarn start
+- An [UI](./app) written in Angular v10 (preview).
+- An [API](./api) written in Rust, compiled to WASM and exposed through a Node.js serverless Function.
 
-Then go to http://localhost:4444/
+### Bazel dependency graph
 
-## Deploying
-
-Simply deploy the `dist` directory to any static web hosting provider (github pages, firebase hosting, etc).
+<p align="center">
+    <img src="./api/docs/graph.png"/>
+</p>
